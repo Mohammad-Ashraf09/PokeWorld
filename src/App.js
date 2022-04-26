@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import LoadingBar from 'react-top-loading-bar';
 import { useState } from 'react';
 import Pokemon from './pages/Pokemon';
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { PokemonProvider } from './context/PokemonContext';
 
 function App() {
@@ -15,15 +15,15 @@ function App() {
   }
 
   return (
-    // <PokemonProvider setProgress={setProgress} >
+    <PokemonProvider setProgress={setProgress} >
       <BrowserRouter>
           <LoadingBar color='#f11946' progress={progressBar} height={3} zIndex="5"/>
         <Routes>
-          <Route path='/' element={ <Home setProgress={setProgress} /> }/>
+          <Route path='/' element={ <Home /> }/>
           <Route path='/pokemon/:id' element={ <Pokemon/> }/>
         </Routes>
       </BrowserRouter>
-    // </PokemonProvider>
+    </PokemonProvider>
   );
 }
 

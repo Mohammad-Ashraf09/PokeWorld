@@ -1,17 +1,21 @@
 import React, { useContext, useEffect } from 'react'
+import { useParams } from 'react-router-dom';
 import PokemonContext from '../context/PokemonContext';
 
 const Pokemon = () => {
 
-    // const {pokemon, loading, totalResults, particularPokemon, getParticularPokemon} = useContext(PokemonContext);
+    const { particularPokemon, getParticularPokemon } = useContext(PokemonContext);
 
-    // useEffect(()=>{
-    //     getParticularPokemon();
-    // },[]);
+    const params = useParams();
+    useEffect(()=>{
+        getParticularPokemon(params.id);
+    },[]);
+
+    console.log(particularPokemon);
 
   return (
     <div>
-        pokemon
+        {particularPokemon.name}
     </div>
   )
 }

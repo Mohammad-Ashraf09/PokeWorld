@@ -24,22 +24,22 @@ export const PokemonProvider = ({children, setProgress}) =>{
     };
 
     // for going to particular pokemon's page
-    // const getParticularPokemon = async (id) =>{
-    //     setProgress(10);
-    //     setLoading(true);
-    //     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/1/`);
-    //     setProgress(30)
-    //     const data = await response.json();
-    //     //console.log(data.results);
-    //     setProgress(70)
-    //     setParticularPokemon(data);
-    //     setLoading(false);
-    //     setProgress(100)
-    // };
+    const getParticularPokemon = async (id) =>{
+        setProgress(10);
+        setLoading(true);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`);
+        setProgress(30)
+        const data = await response.json();
+        //console.log(data.results);
+        setProgress(70)
+        setParticularPokemon(data);
+        setLoading(false);
+        setProgress(100)
+    };
 
     return(
         <PokemonContext.Provider
-            value={{ pokemon, loading, totalResults, getPokemons }}>
+            value={{ pokemon, loading, totalResults, particularPokemon, getPokemons, getParticularPokemon }}>
             {children}
         </PokemonContext.Provider>
     );

@@ -22,10 +22,28 @@ const PokemonCard = ({data}) => {
     let name = data.name;
     name = name.charAt(0).toUpperCase() + name.slice(1);
     let pokemonType = type.charAt(0).toUpperCase() + type.slice(1);
-    // setId(id+1);
+    
+    let x = data.url;
+    var y;
+    if(x.length===36){
+        y = x[34];
+        //console.log(y)
+    }
+    else if(x.length===37){
+        y = x[34]+x[35];
+        //console.log(y)
+    }
+    else if(x.length===38){
+        y = x[34]+x[35]+x[36];
+        //console.log(y)
+    }
+    else if(x.length===40){
+        y = x[34]+x[35]+x[36]+x[37]+x[38];
+        //console.log(y)
+    }
 
   return (
-    <Link to={`/pokemon/${name}`} style={{textDecoration : "none"}}>
+    <Link to={`/pokemon/${y}`} style={{textDecoration : "none"}}>
         <div className='pokemon-card'>
             <img src={avatar} alt="" />
             <div className="pokemon-card-wrapper">

@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+body{
+    margin: 0 ;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --bg-color : rgba(218, 227, 218, 0.6);
+    --shadow-color : rgba(141, 140, 140, 0.8);
+    --grey-dark : rgb(108, 104, 104);
+    --grey-light : rgb(154, 147, 147);
+    --grey-xl-light : rgba(206, 200, 200, 0.5);
+    --theme-color : rgb(156, 56, 233);
+    --theme-shadow : rgba(156, 56, 233, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topbar-container{
+    box-sizing: border-box;
+    height: 55px;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 4;
+    top: 0;
+    box-shadow: 0px 2px 5px rgb(59, 59, 59);
+    background-color: rgb(25, 25, 25);
+    /* border: 1px solid red; */
+}
+.topbar-left{
+    flex: 9;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.logo-img{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.logo-text{
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight:800;
+    cursor: pointer;
+    color: var(--grey-light);
+}
+.topbar-right{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.topbar-right-content{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    color: var(--grey-light);
+    margin-bottom: 0;
+}
+.topbar-right-content li{
+    margin-right: 35px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.home-container{
+    background-color:rgba(121, 209, 219, 0.488);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*------------------------ home page search bar ---------------------*/
+.search-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.search-box-wrapper{
+    position: relative;
+    margin: 30px 0;
+}
+.search{
+    resize: none;
+    padding: 15px 50px 15px 18px;
+    width: 500px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+}
+.send-icon{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 12px;
+    color: var(--theme-color);
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.pokemon-card{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: rgb(96, 108, 109);
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px var(--shadow-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.pokemon-card img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid black;
+    background-color: rgb(213, 209, 209);
+}
+.name{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(213, 209, 209);
+    margin-bottom: 5px;
+}
+.detail-type{
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+}
+.detail{
+    font-size: 13px;
+    color: var(--grey-xl-light);
+}
+.type{
+    font-size: 13px;
+    color: var(--grey-xl-light);
+}
+.type span{
+    color: rgb(213, 209, 209);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    height: 80px;
 }

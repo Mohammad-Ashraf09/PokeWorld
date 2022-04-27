@@ -1,6 +1,7 @@
 body{
     margin: 0 ;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
 }
 :root{
     --bg-color : rgba(218, 227, 218, 0.6);
@@ -65,7 +66,7 @@ body{
 
 
 .home-container{
-    background-color:rgba(121, 209, 219, 0.488);
+    background-color:rgba(228, 228, 142, 0.903);
 }
 
 /*------------------------ home page search bar ---------------------*/
@@ -95,7 +96,7 @@ body{
     font-size: 20px;
     right: 15px;
     top: 12px;
-    color: var(--theme-color);
+    color: rgb(96, 108, 109);
     cursor: pointer;
 }
 
@@ -106,7 +107,7 @@ body{
     margin-bottom: 30px;
     background-color: rgb(96, 108, 109);
     border-radius: 8px;
-    box-shadow: 4px 4px 8px var(--shadow-color);
+    box-shadow: 6px 8px 8px var(--shadow-color);
     padding: 10px;
     cursor: pointer;
 }
@@ -117,7 +118,7 @@ body{
     object-fit: cover;
     margin-right: 10px;
     border: 1px solid black;
-    background-color: rgb(213, 209, 209);
+    background-color: rgb(172, 238, 212);
 }
 .name{
     font-size: 20px;
@@ -147,4 +148,87 @@ body{
     display: flex;
     justify-content: center;
     height: 80px;
+}
+
+
+/* --------------------------------- Detail Page ------------------------- */
+.detail-container-wrapper{
+    display: flex;
+    margin: 0 4rem;
+    
+}
+.detail-left{
+    flex: 8;
+    height: calc(100vh - 95px);
+    position: relative;
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+}
+.detail-right{
+    flex: 4;
+    height: calc(100vh - 95px);
+    margin: 20px 0 20px 10px;
+    border-radius: 10px;
+}
+
+.cover-pic{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* object-fit: cover; */
+}
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    border: 2px solid white;
+    background-color: rgb(72, 86, 57);
+    border-radius: 8px;
+}
+.about1{
+    width: 200px;
+    height: 280px;
+    padding: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    background-color: rgb(52, 51, 51);
+    border-radius: 8px;
+}
+.about1-text{
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+}
+.about1-text span{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-family: Calibri;
+}
+.about1-name{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(45, 41, 139);
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+.about2{
+    width: 93%;
+    height: 92px;
+    margin: 20px 0 0 16px;
+    border-radius: 8px;
+    background-color: rgb(52, 51, 51);
+}
+.detail-right p{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: underline;
 }

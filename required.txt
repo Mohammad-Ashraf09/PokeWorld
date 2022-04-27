@@ -1,0 +1,13 @@
+Endpoint
+    - https://pokeapi.co/api/v2/pokemon/
+Documentation
+    - https://pokeapi.co/docs/v2
+
+--------------------------------------------------------
+
+1. abilities[0]ability.name / abilities[0]ability.url---->effect_entries[0].effect
+2. moves[0].move.name
+
+Use type for color change (for ui.. Like a
+grass type pokemon UI can have a green background...)
+    

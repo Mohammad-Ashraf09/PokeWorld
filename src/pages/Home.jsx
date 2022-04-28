@@ -40,12 +40,12 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         {pokemon.map((data)=>(
-                            <div className='col-md-4' key={data.name}>
+                            <div className='col-md-6 col-sm-6 col-lg-4' key={data.name}>
                                 <PokemonCard data={data} />
                             </div>
                         ))}
                         {pokemons.map((data)=>(
-                            <div className='col-md-4' key={data.name}>
+                            <div className='col-md-6 col-sm-6 col-lg-4' key={data.name}>
                                 <PokemonCard data={data} />
                             </div>
                         ))}

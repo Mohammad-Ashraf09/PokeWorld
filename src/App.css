@@ -152,10 +152,12 @@ body{
 
 
 /* --------------------------------- Detail Page ------------------------- */
+.detail-container{
+    background-color:rgba(228, 228, 142, 0.903);
+}
 .detail-container-wrapper{
     display: flex;
     margin: 0 4rem;
-    
 }
 .detail-left{
     flex: 8;
@@ -231,4 +233,372 @@ body{
     font-size: 24px;
     font-weight: 800;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 400px)
+{
+    *{
+        font-size: 12px;
+        margin: 0;
+    }
+    .topbar-container{
+        padding: 5px;
+    }
+    .topbar-left{
+        flex: 6;
+    }
+    .topbar-right{
+        flex: 6;
+    }
+    .logo-text{
+        font-size: 20px;
+    }
+    .topbar-right-content{
+        font-size: 12px;
+    }
+    .topbar-right-content li{
+        margin-right: 10px;
+    }
+
+    .search-box-wrapper{
+        margin: 20px 0;
+    }
+    .search{
+        padding: 10px 50px 10px 18px;
+        width: 300px;
+    }
+    .send-icon{
+        top: 8px;
+    }
+    .send-icon i{
+        font-size: 18px;
+    }
+
+    .detail-type{
+        width: 270px;
+    }
+
+
+    
+    .detail-container-wrapper{
+        margin: 0;
+        display: block;
+    }
+    .detail-left{
+        margin: 0;
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+    .detail-right{
+        margin: 0;
+        border-radius: 0;
+    }
+    .cover-pic{
+        height: 130px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .profile-pic{
+        width: 140px;
+        height: 140px;
+        padding: 6px;
+        top: 60px;
+        left: 20px;
+    }
+    .about1{
+        width: 140px;
+        height: 300px;
+        padding: 10px;
+        top: 230px;
+        left: 20px;
+    }
+    .about1-text{
+        font-size: 15px;
+    }
+    .about1-text span{
+        font-size: 13px;
+    }
+    .about1-name{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-left: 160px;
+    }
+    .about2{
+        width: 90%;
+        margin: 15px 0 0 18px;
+    }
+    .detail-right p{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+/*-------------------------------------- meadia querry ---------------------------------*/
+@media only screen and (min-width: 401px) and (max-width: 500px){
+    *{
+        font-size: 13px;
+        margin: 0;
+    }
+    .topbar-container{
+        padding: 5px;
+    }
+    .topbar-left{
+        flex: 6;
+    }
+    .topbar-right{
+        flex: 6;
+    }
+    .logo-text{
+        font-size: 20px;
+    }
+    .topbar-right-content{
+        font-size: 12px;
+    }
+    .topbar-right-content li{
+        margin-right: 10px;
+    }
+
+    .search-box-wrapper{
+        margin: 20px 0;
+    }
+    .search{
+        padding: 10px 50px 10px 18px;
+        width: 320px;
+    }
+    .send-icon{
+        top: 8px;
+    }
+    .send-icon i{
+        font-size: 18px;
+    }
+
+    .detail-type{
+        width: 300px;
+    }
+
+    /*------------ 2nd page ------------*/
+    .detail-container-wrapper{
+        margin: 0;
+        display: block;
+    }
+    .detail-left{
+        margin: 0;
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+    .detail-right{
+        margin: 0;
+        border-radius: 0;
+    }
+    .cover-pic{
+        height: 140px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .profile-pic{
+        width: 140px;
+        height: 140px;
+        padding: 6px;
+        top: 65px;
+        left: 20px;
+    }
+    .about1{
+        width: 140px;
+        height: 500px;
+        padding: 10px;
+        top: 230px;
+        left: 20px;
+    }
+    .about1-text{
+        font-size: 15px;
+    }
+    .about1-text span{
+        font-size: 13px;
+    }
+    .about1-name{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-left: 160px;
+    }
+    .about2{
+        width: 90%;
+        margin: 15px 0 0 18px;
+    }
+    .detail-right p{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px){
+    
+    .topbar-container{
+        padding: 5px 5px 5px 15px;
+    }
+    .topbar-left{
+        flex: 6;
+    }
+    .topbar-right{
+        flex: 6;
+    }
+    .logo-text{
+        font-size: 22px;
+    }
+    .topbar-right-content{
+        font-size: 14px;
+    }
+    .topbar-right-content li{
+        margin-right: 20px;
+    }
+
+    .search-box-wrapper{
+        margin: 30px 0;
+    }
+    .search{
+        padding: 15px 50px 15px 18px;
+        width: 400px;
+    }
+    .send-icon{
+        top: 14px;
+    }
+    .send-icon i{
+        font-size: 20px;
+    }
+
+    .detail-type{
+        width: 240px;
+    }
+
+    /*------------ 2nd page ------------*/
+    .detail-container-wrapper{
+        margin: 0;
+        display: block;
+    }
+    .detail-left{
+        margin: 0;
+        height: 500px;
+        margin-bottom: 20px;
+        position: relative;
+        border-radius: 0;
+    }
+    .detail-right{
+        margin: 0;
+        border-radius: 0;
+        height: 600px;
+    }
+    .cover-pic{
+        height: 150px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .profile-pic{
+        width: 140px;
+        height: 140px;
+        padding: 6px;
+        top: 80px;
+        left: 20px;
+    }
+    .about1{
+        width: 140px;
+        height: 250px;
+        padding: 10px;
+        top: 230px;
+        left: 20px;
+    }
+    .about1-text{
+        font-size: 15px;
+    }
+    .about1-text span{
+        font-size: 13px;
+    }
+    .about1-name{
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-left: 160px;
+    }
+    .about2{
+        margin: 15px 0 0 22px;
+    }
+    .detail-right p{
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .detail-type{
+        width: 200px;
+    }
+
+    /*------------ 2nd page ------------*/
+    .detail-container-wrapper{
+        margin: 0;
+        display: block;
+    }
+    .detail-left{
+        margin: 0;
+        margin-bottom: 20px;
+        position: relative;
+        border-radius: 0;
+        height: 600px;
+    }
+    .detail-right{
+        margin: 0;
+        border-radius: 0;
+        height: 700px;
+    }
+    .cover-pic{
+        height: 160px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        padding: 8px;
+        top: 80px;
+        left: 20px;
+    }
+    .about1{
+        width: 150px;
+        height: 300px;
+        padding: 10px;
+        top: 260px;
+        left: 20px;
+    }
+    .about1-text{
+        font-size: 16px;
+    }
+    .about1-text span{
+        font-size: 14px;
+    }
+    .about1-name{
+        font-size: 22px;
+        font-weight: 800;
+        margin-top: 15px;
+        margin-left: 160px;
+    }
+    .about2{
+        margin: 30px 0 0 30px;
+    }
+    .detail-right p{
+        padding-top: 15px;
+        font-size: 22px;
+        font-weight: 800;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1367px){
+    .detail-type{
+        width: 265px;
+    }
+
+    /*------------ 2nd page ------------*/
+    .about1{
+        width: 200px;
+        height: 500px;
+        padding: 20px;
+        top: 330px;
+        left: 30px;
+    }
 }

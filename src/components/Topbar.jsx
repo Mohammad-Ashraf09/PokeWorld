@@ -5,12 +5,10 @@ import {Link} from "react-router-dom";
 
 const Topbar = () => {
 
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-
   return (
     <div className='topbar-container'>
         <div className="topbar-left">
-            <img src={PF+"logo.png"} alt="" className="logo-img"/>
+            <img src="https://www.freeiconspng.com/uploads/pokeball-transparent-png-2.png" alt="" className="logo-img"/>
             <div className="logo-text">PokeWorld</div>
         </div>
         <div className="topbar-right">

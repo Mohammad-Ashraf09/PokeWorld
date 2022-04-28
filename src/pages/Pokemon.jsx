@@ -68,7 +68,7 @@ const Pokemon = () => {
         <div className="detail-container-wrapper">
 
           <div className="detail-left" style={{backgroundColor:bg}}>
-              <img className="cover-pic" src={PF+"cover10.jpg"} alt="" />
+              <img className="cover-pic" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f2baa7a-73cf-4a5e-a1b0-c1ed9f7651bd/d8p8gug-fa9365e1-6c96-4c7b-9127-7ed2fca5ca96.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhmMmJhYTdhLTczY2YtNGE1ZS1hMWIwLWMxZWQ5Zjc2NTFiZFwvZDhwOGd1Zy1mYTkzNjVlMS02Yzk2LTRjN2ItOTEyNy03ZWQyZmNhNWNhOTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.r4y8KNyxAW10Jg8ICL_bBxNBkDf6dglv7bQPEF8tOWc" alt="" />
               <img className="profile-pic" src={dp} alt="" />
               <div className="about1">
                 <p className='about1-text'> <span>Species</span> : {species}</p>
